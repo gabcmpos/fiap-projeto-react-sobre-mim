@@ -1,0 +1,133 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Container{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+}
+
+.Container::before{
+    content: "";
+    background-image: url('./image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; 
+}
+
+.NavbarContainer{
+    display: flex;
+    width: 100%;
+    margin: 8px;
+}
+
+.ContentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
+    margin-bottom: auto; 
+    height: calc(100vh - 46px);
+    width: 100vw;
+}
+
+.Navbar{   
+    height: 30px;;
+    background-color: transparent;
+    width: 100%;
+    margin: 8px;
+
+}
+
+nav ul{ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+
+nav ul li a:hover{ 
+    color: red;
+
+}
+
+.CardContainer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:#FFC0CB;
+    height: 300px;
+    width: 500px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.TituloContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.TextCard{  
+    text-align: left;   
+    padding: 12px;
+    font-size: 20px;
+}
+
+.CEP{   
+    display: flex;
+    align-items: center;
+}
+
+.Search{    
+    background-color:white; 
+    color: black;
+    border: 0.5px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.Search:hover {
+    background-color: pink; /* Muda a cor de fundo quando o mouse passa por cima */
+    color: white; /* Muda a cor do texto quando o mouse passa por cima */
+}
+
+.Information {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 20px;
+    margin-top: 8px;
+}
